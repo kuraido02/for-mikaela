@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background: radial-gradient(circle at top, hsl(308, 40%, 77%), hsl(315, 91%, 50%));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mikay{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 35px;
+    background: linear-gradient(160deg, hsl(308, 21%, 61%), hsl(314, 95%, 46%));
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .5), 0 0 0 1px hsl(298, 65%, 36%);
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2.4rem;
+    letter-spacing: .5px;
+}
+
+button{
+    background-color: hsl(316, 81%, 55%);
+    margin-top: 20px;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid hsl(298, 65%, 36%);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .5px;
+    font-family: 'serif';
+    transform: all .2s ease;
+}
+
+button:hover{
+    background-color: hsl(316, 81%, 39%);
+    transform: translateY(-3px);
+}
+
+button:active{
+    background-color: hsl(316, 81%, 60%);
+    transform: translateY(3px);
+}
+
+#heart-container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black
+}
+
+.heart-word{
+    position: absolute;
+    font-size: 1.1rem;
+    color: red;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+    letter-spacing: 5px;
+}
+
+.heart-center{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: hsl(0, 100%, 50%);
+}
