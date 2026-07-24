@@ -12,8 +12,8 @@ const phrases = [
 const repeated = [...phrases, ...phrases, ...phrases];
 
 const container = document.getElementById('heart-container');
-const width = window.innerWidth;
-const height = window.innerHeight;
+const width = container.offsetWidth;
+const height = container.offsetHeight;
 const scale = Math.min(width, height) / 35;
 const fontSize = scale * 0.85;
 const n = repeated.length;
