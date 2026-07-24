@@ -60,14 +60,13 @@ button:active{
 #heart-container{
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: min(100vh, 100vw);
     overflow: hidden;
     background-color: black
 }
 
 .heart-word{
     position: absolute;
-    font-size: 1.1rem;
     color: red;
     white-space: nowrap;
     transform: translate(-50%, -50%);
@@ -75,7 +74,6 @@ button:active{
 }
 
 .heart-center{
-    font-size: 1.6rem;
     font-weight: bold;
     color: hsl(0, 100%, 50%);
 }

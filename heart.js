@@ -15,6 +15,7 @@ const container = document.getElementById('heart-container');
 const width = window.innerWidth;
 const height = window.innerHeight;
 const scale = Math.min(width, height) / 35;
+const fontSize = scale * 0.85;
 const n = repeated.length;
 
 const rawPoints = [];
@@ -42,6 +43,7 @@ rawPoints.forEach((p, i) => {
   span.className = 'heart-word';
   span.style.left = px + 'px';
   span.style.top = py + 'px';
+  span.style.fontSize = fontSize + 'px';
   container.appendChild(span);
 });
 
@@ -50,4 +52,5 @@ center.textContent = 'Mahal kita!';
 center.className = 'heart-word heart-center';
 center.style.left = cx + 'px';
 center.style.top = cy + 'px';
+center.style.fontSize = (fontSize * 1.6) + 'px';
 container.appendChild(center);
