@@ -58,9 +58,8 @@ button:active{
 }
 
 #heart-container{
-    position: relative;
-    width: 100vw;
-    height: min(100vh, 100vw);
+    position: fixed;
+    inset: 0;
     overflow: hidden;
     background-color: black
 }
